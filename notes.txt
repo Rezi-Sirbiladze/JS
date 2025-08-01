@@ -1,0 +1,7 @@
+✦ JS: CONCEPTOS
+
+🚫 Notas Clave
+- array.at(-1)                      → Obtiene elementos desde el final del array.
+- array.with(1, 'newItem')          → Devuelve una copia del array reemplazando un índice.
+- Object.groupBy(array, callback)   → Agrupa elementos según la función indicada.
+- new Set([])                       → Crea un conjunto de valores únicos sin duplicados.
