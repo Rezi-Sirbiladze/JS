@@ -5,3 +5,10 @@
 - array.with(1, 'newItem')          → Devuelve una copia del array reemplazando un índice.
 - Object.groupBy(array, callback)   → Agrupa elementos según la función indicada.
 - new Set([])                       → Crea un conjunto de valores únicos sin duplicados.
+- Promise.allSettled()              → Espera todas las promesas y devuelve estado final.
+- Promise.any()                     → Devuelve la primera que se cumpla, ignora las rechazadas.
+- Promise.try()                     → Envuelve ejecución en promesa (no estándar nativo).
+- Promise.withResolvers()           → Crea promesa con resolve y reject accesibles externamente.
+
+⚙️ TÉCNICAS
+jsonplaceholder.typicode.com → API gratuita, falsa y confiable para pruebas y creación de prototipos.

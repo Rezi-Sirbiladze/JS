@@ -1,3 +1,5 @@
+console.log('---');
+
 const animals = [
     { id: 1, name: 'Perro', type: 'Mamífero' },
     { id: 2, name: 'Gato', type: 'Mamífero' },
@@ -10,14 +12,14 @@ console.log(animals[1].name);
 console.log(animals.length);
 console.log(animals.at(-1).name);
 
-//
+console.log('---');
 
 const fruits = ['Manzana', 'Banana', 'Naranja', 'Fresa'];
 console.log({ fruits });
 const fruitsCopy = fruits.with(1, 'Kiwi');
 console.log({ fruitsCopy });
 
-//
+console.log('---');
 
 const numbers = [1, 2, 3, 4, 5];
 const groupNumbers = Object.groupBy(numbers, (num) => {
@@ -43,18 +45,20 @@ const groupedMotoGp = Object.groupBy(motoGp, (team) => {
 });
 console.log({ groupedMotoGp });
 
-//
+console.log('---');
 
 const colors = new Set(['Red', 'Green', 'Blue', 'Yellow', 'Pink', 'Purple', 'Orange', 'Cyan', 'Magenta']);
 const moreColors = new Set(['Yellow', 'Pink', 'Purple']);
 const otherColors = new Set(['Orange', 'Cyan', 'Magenta']);
 
-colors.has('Red');
-colors.union(moreColors);
-colors.intersection(moreColors);
-colors.difference(moreColors);
-colors.symmetricDifference(moreColors);
+const hasRed = colors.has('Red');
+const union = new Set([...colors, ...moreColors]);
+const intersection = new Set([...colors].filter(color => moreColors.has(color)));
+const difference = new Set([...colors].filter(color => !moreColors.has(color)));
+const symmetricDifference = new Set([...union].filter(color => !intersection.has(color)));
 
-colors.isSubset(moreColors);
-colors.isSuperset(moreColors);
-colors.isDisjoint(moreColors);
+colors.isSubsetOf(moreColors);
+colors.isSupersetOf(moreColors);
+colors.isDisjointFrom(moreColors);
+
+console.log({ hasRed, union, intersection, difference, symmetricDifference });
