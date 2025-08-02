@@ -9,6 +9,9 @@
 - Promise.any()                     → Devuelve la primera que se cumpla, ignora las rechazadas.
 - Promise.try()                     → Envuelve ejecución en promesa (no estándar nativo).
 - Promise.withResolvers()           → Crea promesa con resolve y reject accesibles externamente.
+- Operador de fusión nula           → nullish ??: null, undefined
+- Operador OR lógico                → falsy ||: false, 0, -0, "", NaN, null, undefined
+
 
 ⚙️ TÉCNICAS
 jsonplaceholder.typicode.com → API gratuita, falsa y confiable para pruebas y creación de prototipos.

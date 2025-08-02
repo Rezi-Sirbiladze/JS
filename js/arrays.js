@@ -1,11 +1,11 @@
 console.log('---');
 
 const animals = [
-    { id: 1, name: 'Perro', type: 'Mamífero' },
-    { id: 2, name: 'Gato', type: 'Mamífero' },
-    { id: 3, name: 'Loro', type: 'Ave' },
-    { id: 4, name: 'Tortuga', type: 'Reptil' },
-    { id: 5, name: 'Salamandra', type: 'Anfibio' }
+    { id: 1, name: 'Dog', type: 'Mammal' },
+    { id: 2, name: 'Cat', type: 'Mammal' },
+    { id: 3, name: 'Parrot', type: 'Bird' },
+    { id: 4, name: 'Turtle', type: 'Reptile' },
+    { id: 5, name: 'Salamander', type: 'Amphibian' }
 ];
 console.log(animals[0].name);
 console.log(animals[1].name);
@@ -14,7 +14,7 @@ console.log(animals.at(-1).name);
 
 console.log('---');
 
-const fruits = ['Manzana', 'Banana', 'Naranja', 'Fresa'];
+const fruits = ['Apple', 'Banana', 'Orange', 'Strawberry'];
 console.log({ fruits });
 const fruitsCopy = fruits.with(1, 'Kiwi');
 console.log({ fruitsCopy });
@@ -32,11 +32,11 @@ const groupedNames = Object.groupBy(names, (name) => name[0]);
 console.log({ groupedNames });
 
 const motoGp = [
-    { id: 1, name: 'Ducati', country: 'Italia', wins: 10 },
-    { id: 2, name: 'Yamaha', country: 'Japón', wins: 5 },
-    { id: 3, name: 'Honda', country: 'Japón', wins: 8 },
+    { id: 1, name: 'Ducati', country: 'Italy', wins: 10 },
+    { id: 2, name: 'Yamaha', country: 'Japan', wins: 5 },
+    { id: 3, name: 'Honda', country: 'Japan', wins: 8 },
     { id: 4, name: 'KTM', country: 'Austria', wins: 2 },
-    { id: 5, name: 'Aprilia', country: 'Italia', wins: 3 }
+    { id: 5, name: 'Aprilia', country: 'Italy', wins: 3 }
 ];
 const groupedMotoGp = Object.groupBy(motoGp, (team) => {
     if (team.wins >= 8) return 'high';
