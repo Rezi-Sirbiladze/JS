@@ -11,7 +11,8 @@
 - Promise.withResolvers()           → Crea promesa con resolve y reject accesibles externamente.
 - Operador de fusión nula           → nullish ??: null, undefined
 - Operador OR lógico                → falsy ||: false, 0, -0, "", NaN, null, undefined
-
+- Separadores numéricos             → Se utiliza el guion bajo (_) para mejorar la legibilidad de números grandes.
+- Symbol()                          → Crea un identificador único e inmutable. Ideal para definir claves.
 
 ⚙️ TÉCNICAS
 jsonplaceholder.typicode.com → API gratuita, falsa y confiable para pruebas y creación de prototipos.
