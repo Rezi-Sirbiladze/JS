@@ -33,6 +33,7 @@
             <li><a href="#promises" onclick="loadSection('promises')">Promises</a></li>
             <li><a href="#operators" onclick="loadSection('operators')">Operators</a></li>
             <li><a href="#other" onclick="loadSection('other')">Other</a></li>
+            <li><a href="#errors" onclick="loadSection('errors')">Errors</a></li>
         </ul>
     </nav>
     <section id="content">
@@ -64,6 +65,14 @@
                 title = 'Other';
                 description = 'Ejemplos de características adicionales de JavaScript.';
                 jsFile = 'js/other.js';
+            } else if (section === 'errors') {
+                title = 'Errors';
+                description = 'Manejo de errores en JavaScript.';
+                jsFile = 'js/errors.js';
+            } else {
+                title = 'JavaScript';
+                description = 'Selecciona una sección para ver ejemplos.';
+                jsFile = '';
             }
 
             content.innerHTML = `<header><h1>${title}</h1><p>${description}</p></header><pre id="output"></pre>`;
