@@ -62,3 +62,21 @@ colors.isSupersetOf(moreColors);
 colors.isDisjointFrom(moreColors);
 
 console.log({ hasRed, union, intersection, difference, symmetricDifference });
+
+console.log('---');
+
+const motorcycles = [
+    { id: 1, name: 'Ducati', score: 99},
+    { id: 2, name: 'Yamaha', score: 85 },
+    { id: 3, name: 'Honda', score: 90 },
+    { id: 4, name: 'KTM', score: 80 },
+    { id: 5, name: 'Aprilia', score: 75 }
+]
+
+const motorcycleIterator = motorcycles.values();
+for (const motorcycle of motorcycleIterator) {
+    console.log(`Motorcycle: ${motorcycle.name}, Score: ${motorcycle.score}`);
+    if (motorcycle.score > 90) {
+        console.log(`${motorcycle.name} is a top performer!`);
+    }
+}
