@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        section {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        header h1 {
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#arrays" onclick="loadSection('arrays')">Arrays</a></li>
+            <li><a href="#promises" onclick="loadSection('promises')">Promises</a></li>
+            <li><a href="#operators" onclick="loadSection('operators')">Operators</a></li>
+            <li><a href="#other" onclick="loadSection('other')">Other</a></li>
+            <li><a href="#errors" onclick="loadSection('errors')">Errors</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+        <header>
+            <h1>JavaScript</h1>
+            <p>Selecciona una sección para ver ejemplos.</p>
+        </header>
+    </section>
+    <script>
+        function loadSection(section) {
+            const content = document.getElementById('content');
+            let title = '';
+            let description = '';
+            let jsFile = '';
+            if (section === 'arrays') {
+                title = 'Arrays';
+                description = 'Ejemplos de manipulación de arrays en JavaScript.';
+                jsFile = '';
+            } else if (section === 'promises') {
+                title = 'Promises';
+                description = 'Ejemplos de uso de Promesas en JavaScript.';
+                jsFile = 'js/1/promises.js';
+            } else if (section === 'operators') {
+                title = 'Operators';
+                description = 'Ejemplos de operadores modernos en JavaScript.';
+                jsFile = 'js/1/operators.js';
+            } else if (section === 'other') {
+                title = 'Other';
+                description = 'Ejemplos de características adicionales de JavaScript.';
+                jsFile = 'js/1/other.js';
+            } else if (section === 'errors') {
+                title = 'Errors';
+                description = 'Manejo de errores en JavaScript.';
+                jsFile = 'js/1/errors.js';
+            } else {
+                title = 'JavaScript';
+                description = 'Selecciona una sección para ver ejemplos.';
+                jsFile = '';
+            }
+
+            content.innerHTML = `<header><h1>${title}</h1><p>${description}</p></header><pre id="output"></pre>`;
+
+            document.querySelectorAll('.dynamic-js').forEach(s => s.remove());
+
+            const script = document.createElement('script');
+            script.src = jsFile;
+            script.className = 'dynamic-js';
+            document.body.appendChild(script);
+        }
+    </script>
+</body>
+
+</html>

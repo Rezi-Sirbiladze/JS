@@ -29,11 +29,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#arrays" onclick="loadSection('arrays')">Arrays</a></li>
             <li><a href="#promises" onclick="loadSection('promises')">Promises</a></li>
-            <li><a href="#operators" onclick="loadSection('operators')">Operators</a></li>
-            <li><a href="#other" onclick="loadSection('other')">Other</a></li>
-            <li><a href="#errors" onclick="loadSection('errors')">Errors</a></li>
         </ul>
     </nav>
     <section id="content">
@@ -49,26 +45,10 @@
             let description = '';
             let jsFile = '';
 
-            if (section === 'arrays') {
-                title = 'Arrays';
-                description = 'Ejemplos de manipulación de arrays en JavaScript.';
-                jsFile = 'js/arrays.js';
-            } else if (section === 'promises') {
+            if (section === 'promises') {
                 title = 'Promises';
                 description = 'Ejemplos de uso de Promesas en JavaScript.';
-                jsFile = 'js/promises.js';
-            } else if (section === 'operators') {
-                title = 'Operators';
-                description = 'Ejemplos de operadores modernos en JavaScript.';
-                jsFile = 'js/operators.js';
-            } else if (section === 'other') {
-                title = 'Other';
-                description = 'Ejemplos de características adicionales de JavaScript.';
-                jsFile = 'js/other.js';
-            } else if (section === 'errors') {
-                title = 'Errors';
-                description = 'Manejo de errores en JavaScript.';
-                jsFile = 'js/errors.js';
+                jsFile = 'js/2/promises.js';
             } else {
                 title = 'JavaScript';
                 description = 'Selecciona una sección para ver ejemplos.';

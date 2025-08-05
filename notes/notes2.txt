@@ -1,0 +1,7 @@
+✦ JS: CONCEPTOS
+
+🚫 Notas Clave
+- Síncrono      → El código se ejecuta línea por línea, esperando que cada tarea termine.
+- Asíncrono     → El código no se detiene; continúa mientras otras tareas se resuelven en segundo plano.
+- Callback      → Función que se ejecuta al finalizar otra, útil para manejar tareas asíncronas.
+
