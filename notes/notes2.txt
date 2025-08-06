@@ -4,4 +4,6 @@
 - Síncrono      → El código se ejecuta línea por línea, esperando que cada tarea termine.
 - Asíncrono     → El código no se detiene; continúa mientras otras tareas se resuelven en segundo plano.
 - Callback      → Función que se ejecuta al finalizar otra, útil para manejar tareas asíncronas.
-
+- Promise       → Es como un ticket de McDonald's: promete un resultado futuro.
+- Estados       → pending: en espera, resolved: cumplida, rejected: fallida. Rechazo → Una Promise se rechaza solo si hay un error, no por devolver cero resultados.
+- fetch         → Función que realiza peticiones HTTP; devuelve una Promise con la respuesta.

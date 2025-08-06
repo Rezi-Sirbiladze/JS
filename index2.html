@@ -29,6 +29,7 @@
 <body>
     <nav>
         <ul>
+            <li><a href="#async" onclick="loadSection('async')">Async</a></li>
             <li><a href="#promises" onclick="loadSection('promises')">Promises</a></li>
         </ul>
     </nav>
@@ -49,6 +50,10 @@
                 title = 'Promises';
                 description = 'Ejemplos de uso de Promesas en JavaScript.';
                 jsFile = 'js/2/promises.js';
+            } else if (section === 'async') {
+                title = 'Async';
+                description = 'Ejemplos de uso de funciones asíncronas en JavaScript.';
+                jsFile = 'js/2/async.js';
             } else {
                 title = 'JavaScript';
                 description = 'Selecciona una sección para ver ejemplos.';
