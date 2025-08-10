@@ -7,3 +7,5 @@
 - Promise       → Es como un ticket de McDonald's: promete un resultado futuro.
 - Estados       → pending: en espera, resolved: cumplida, rejected: fallida. Rechazo → Una Promise se rechaza solo si hay un error, no por devolver cero resultados.
 - fetch         → Función que realiza peticiones HTTP; devuelve una Promise con la respuesta.
+- async → Hace que la función devuelva siempre una promesa.
+- await → Espera a que una promesa se resuelva y devuelve su resultado. Remplaza a .then
